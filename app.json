@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "MathPoP",
+    "slug": "mathpop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/mathpop.png",
+    "scheme": "mathpop",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mobdevfinals.mathpop",
+      "buildNumber": "1.0.0",
+      "icon": "./assets/images/mathpop.png",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/mathpop.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.yourname.mathpop"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/mathpop.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/mathpop.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "owner": "motchi",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c9a9e8f2-6c34-4977-b566-b23b39397a6b"
+      }
+    }
+  }
+}
