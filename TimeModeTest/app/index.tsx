@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import TimeMode from './TimeMode'; // Adjust the import path as necessary
+import TimeMode from './TimeMode'; 
 import SurvivalMode from './SurvivalMode';
 import MainMenu from './MainMenu';
 export default function App() {
