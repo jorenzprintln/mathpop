@@ -8,6 +8,7 @@ import {
   Image, 
   TouchableWithoutFeedback,
   Animated,
+  StatusBar
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
@@ -928,6 +929,7 @@ useEffect(() => {
 
   return (
     <LinearGradient colors={['#ff9a9e', '#fad0c4']} style={styles.container}>
+       <StatusBar hidden={true} />  
       <View style={styles.topPanel}>
         <View style={styles.topRow}>
           <View style={styles.iconWrapper}>

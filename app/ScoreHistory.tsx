@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ScrollView, View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, Modal } from "react-native";
+import { ScrollView, View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, Modal, StatusBar } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const { width } = Dimensions.get("window");
@@ -138,6 +138,7 @@ const ScoreHistory = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true} />
       <View style={styles.top}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <Image source={require('../assets/images/left-arrow.png')} style={styles.back} />

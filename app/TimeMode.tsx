@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, StyleSheet, Dimensions, TouchableOpacity, Animated, Image, TouchableWithoutFeedback, Vibration} from 'react-native';
+import { View, Text, StyleSheet, Dimensions, TouchableOpacity, Animated, Image, TouchableWithoutFeedback, Vibration, StatusBar} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Cloud from './Cloud';
 import { useFonts } from 'expo-font';
@@ -812,6 +812,7 @@ const handleImmediateReplay = async () => {
 
   return (
     <LinearGradient colors={['#a1c4fd', '#c2e9fb']} style={styles.container}>
+    <StatusBar hidden={true} />
       <View style={styles.topPanel}>
         <View style={styles.topRow}>
           <View style={styles.iconWrapper}>
